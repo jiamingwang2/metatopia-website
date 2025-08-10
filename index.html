@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>METATOPIA (MTP) - 元宇宙生态代币</title>
+    <meta name="description" content="METATOPIA (MTP) 是构建元宇宙生态系统的创新加密货币项目，为全球用户提供安全、便捷的数字资产服务。">
+    <meta name="keywords" content="METATOPIA, MTP, 加密货币, 元宇宙, 区块链, 数字资产">
+    <meta name="author" content="METATOPIA Team">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="METATOPIA (MTP) - 元宇宙生态代币">
+    <meta property="og:description" content="构建元宇宙生态系统的创新加密货币项目">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://metatopia.io">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+    
+    <!-- Bootstrap CSS -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link href="assets/css/style.css?v=6" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- 粒子背景 -->
+    <div id="particles-js"></div>
+    
+    <!-- 页面进度指示器 -->
+    <div class="page-progress">
+        <div class="progress-bar" id="progressBar"></div>
+    </div>
+
+    <!-- 快速导航 -->
+    <div class="quick-nav" id="quickNav">
+        <div class="quick-nav-item" data-target="hero">
+            <i class="fas fa-home"></i>
+            <span>首页</span>
+        </div>
+        <div class="quick-nav-item" data-target="features">
+            <i class="fas fa-star"></i>
+            <span>特色</span>
+        </div>
+        <div class="quick-nav-item" data-target="stats">
+            <i class="fas fa-chart-bar"></i>
+            <span>数据</span>
+        </div>
+        <div class="quick-nav-item" data-target="news">
+            <i class="fas fa-newspaper"></i>
+            <span>资讯</span>
+        </div>
+    </div>
+
+    <!-- 导航栏 -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="fas fa-cube me-2"></i>METATOPIA
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">首页</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://traecwtrg4km-chc2662-6414-mtp1.vercel.app" target="_blank">
+                            <i class="fas fa-gamepad me-1"></i>游戏平台
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">关于我们</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="whitepaper.html">白皮书</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="community.html">社区</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">联系我们</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 英雄区域 -->
+    <section class="hero-section" id="hero">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="hero-content">
+                        <h1 class="hero-title">METATOPIA</h1>
+                        <p class="hero-subtitle">构建元宇宙生态系统的创新代币</p>
+                        <p class="hero-description">
+                            METATOPIA (MTP) 致力于通过区块链技术为用户提供去中心化的数字资产管理和交易服务，
+                            成为元宇宙领域的领先加密货币项目。
+                        </p>
+                        <div class="hero-buttons">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-10">
+                                    <!-- 主要操作按钮 -->
+                                    <div class="primary-buttons mb-4">
+                                        <a href="https://traecwtrg4km-chc2662-6414-mtp1.vercel.app" target="_blank" class="btn btn-primary btn-lg me-3 mb-3 animate-pulse glow-effect">
+                                            <i class="fas fa-gamepad me-2"></i>进入游戏平台
+                                        </a>
+                                        <a href="#" class="btn btn-success btn-lg me-3 mb-3 investment-btn">
+                                            <i class="fas fa-chart-line me-2"></i>立即投资
+                                        </a>
+                                        <a href="whitepaper.html" class="btn btn-warning btn-lg me-3 mb-3 download-btn">
+                                            <i class="fas fa-download me-2"></i>下载白皮书
+                                        </a>
+                                    </div>
+                                    
+                                    <!-- 次要操作按钮 -->
+                                    <div class="secondary-buttons">
+                                        <a href="community.html" class="btn btn-outline-light me-3 mb-3 community-btn">
+                                            <i class="fas fa-users me-2"></i>加入社区
+                                        </a>
+                                        <a href="#" class="btn btn-outline-light me-3 mb-3 demo-btn">
+                                            <i class="fas fa-calendar-alt me-2"></i>预约演示
+                                        </a>
+                                        <a href="#" class="btn btn-outline-light me-3 mb-3 subscribe-btn">
+                                            <i class="fas fa-bell me-2"></i>订阅通知
+                                        </a>
+                                        <a href="contact.html" class="btn btn-outline-light mb-3 contact-btn">
+                                            <i class="fas fa-envelope me-2"></i>联系我们
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 项目特色 -->
+    <section class="features-section" id="features">
+        <div class="container">
+            <div class="row text-center mb-5">
+                <div class="col-lg-8 mx-auto">
+                    <h2 class="fade-in-up">核心优势</h2>
+                    <p class="text-muted fade-in-up">METATOPIA 的创新特性让我们在元宇宙生态中脱颖而出</p>
+                </div>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="card feature-card h-100 scan-line">
+                        <div class="card-body text-center">
+                            <div class="feature-icon">
+                                <i class="fas fa-shield-alt"></i>
+                            </div>
+                            <h3 class="card-title">安全可靠</h3>
+                            <p class="card-text">
+                                采用最先进的区块链技术和智能合约，确保用户资产安全，
+                                通过多重验证机制保障交易的可靠性。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="card feature-card h-100">
+                        <div class="card-body text-center">
+                            <div class="feature-icon">
+                                <i class="fas fa-rocket"></i>
+                            </div>
+                            <h3 class="card-title">高效便捷</h3>
+                            <p class="card-text">
+                                优化的交易处理机制，实现秒级确认，低手续费，
+                                为用户提供流畅的数字资产交易体验。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="card feature-card h-100">
+                        <div class="card-body text-center">
+                            <div class="feature-icon">
+                                <i class="fas fa-globe"></i>
+                            </div>
+                            <h3 class="card-title">生态丰富</h3>
+                            <p class="card-text">
+                                构建完整的元宇宙生态系统，支持NFT交易、虚拟世界建设、
+                                游戏娱乐等多元化应用场景。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="card feature-card h-100">
+                        <div class="card-body text-center">
+                            <div class="feature-icon">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <h3 class="card-title">社区驱动</h3>
+                            <p class="card-text">
+                                由全球社区共同治理，持币者享有项目决策权，
+                                共同推动METATOPIA生态的发展壮大。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="card feature-card h-100">
+                        <div class="card-body text-center">
+                            <div class="feature-icon">
+                                <i class="fas fa-chart-line"></i>
+                            </div>
+                            <h3 class="card-title">价值增长</h3>
+                            <p class="card-text">
+                                通过通缩机制和生态应用的不断扩展，
+                                为持币者创造长期稳定的价值增长空间。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="card feature-card h-100">
+                        <div class="card-body text-center">
+                            <div class="feature-icon">
+                                <i class="fas fa-cogs"></i>
+                            </div>
+                            <h3 class="card-title">技术创新</h3>
+                            <p class="card-text">
+                                持续的技术研发投入，引入最新的区块链技术，
+                                为元宇宙应用提供强大的技术支撑。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 统计数据 -->
+    <section class="stats-section" id="stats">
+        <div class="container">
+            <div class="row text-center mb-5">
+                <div class="col-lg-8 mx-auto">
+                    <h2 class="fade-in-up">项目数据</h2>
+                    <p class="text-muted fade-in-up">实时展示METATOPIA项目的关键指标</p>
+                </div>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6">
+                    <div class="stat-item">
+                        <span class="stat-number" data-count="1000000000">0</span>
+                        <div class="stat-label">总供应量</div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-6">
+                    <div class="stat-item">
+                        <span class="stat-number" data-count="50000">0</span>
+                        <div class="stat-label">持币地址</div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-6">
+                    <div class="stat-item">
+                        <span class="stat-number" data-count="1000000">0</span>
+                        <div class="stat-label">交易次数</div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-6">
+                    <div class="stat-item">
+                        <span class="stat-number" data-count="25">0</span>
+                        <div class="stat-label">合作伙伴</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 用户评价 -->
+    <section class="testimonials-section">
+        <div class="container">
+            <div class="row text-center mb-5">
+                <div class="col-lg-8 mx-auto">
+                    <h2 class="fade-in-up">用户评价</h2>
+                    <p class="text-muted fade-in-up">来自全球用户的真实反馈</p>
+                </div>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="card testimonial-card h-100 glow-pulse">
+                        <div class="card-body text-center">
+                            <div class="testimonial-avatar mb-3">
+                                <img src="https://trae-api-sg.mchost.guru/api/ide/v1/text_to_image?prompt=Professional%20user%20avatar%2C%20happy%20crypto%20investor%2C%20modern%20portrait%2C%20confident%20expression&image_size=square" alt="用户头像" class="rounded-circle">
+                            </div>
+                            <div class="stars mb-3">
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                            </div>
+                            <p class="testimonial-text">"METATOPIA的技术架构非常先进，用户体验也很棒。作为早期投资者，我对项目的未来发展充满信心。"</p>
+                            <h6 class="testimonial-author">张先生</h6>
+                            <small class="text-muted">区块链投资者</small>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="card testimonial-card h-100">
+                        <div class="card-body text-center">
+                            <div class="testimonial-avatar mb-3">
+                                <img src="https://trae-api-sg.mchost.guru/api/ide/v1/text_to_image?prompt=Professional%20female%20user%20avatar%2C%20tech%20enthusiast%2C%20modern%20portrait%2C%20friendly%20expression&image_size=square" alt="用户头像" class="rounded-circle">
+                            </div>
+                            <div class="stars mb-3">
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                            </div>
+                            <p class="testimonial-text">"元宇宙游戏平台的体验超出了我的预期，画面精美，操作流畅。MTP代币的应用场景也很丰富。"</p>
+                            <h6 class="testimonial-author">李女士</h6>
+                            <small class="text-muted">游戏玩家</small>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="card testimonial-card h-100">
+                        <div class="card-body text-center">
+                            <div class="testimonial-avatar mb-3">
+                                <img src="https://trae-api-sg.mchost.guru/api/ide/v1/text_to_image?prompt=Professional%20developer%20avatar%2C%20blockchain%20expert%2C%20modern%20portrait%2C%20technical%20background&image_size=square" alt="用户头像" class="rounded-circle">
+                            </div>
+                            <div class="stars mb-3">
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                            </div>
+                            <p class="testimonial-text">"作为开发者，我对METATOPIA的开放API和智能合约架构印象深刻。这为第三方开发提供了很好的支持。"</p>
+                            <h6 class="testimonial-author">王先生</h6>
+                            <small class="text-muted">区块链开发者</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 生态系统概览 -->
+    <section class="ecosystem-section">
+        <div class="container">
+            <div class="row text-center mb-5">
+                <div class="col-lg-8 mx-auto">
+                    <h2 class="fade-in-up">生态系统概览</h2>
+                    <p class="text-muted fade-in-up">构建完整的元宇宙生态链</p>
+                </div>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6">
+                    <div class="card ecosystem-card h-100 parallax">
+                        <div class="card-body text-center">
+                            <div class="ecosystem-icon mb-3">
+                                <i class="fas fa-gamepad fa-3x text-warning"></i>
+                            </div>
+                            <h5>游戏平台</h5>
+                            <p class="text-muted">多款原创元宇宙游戏，支持NFT道具交易和玩家对战</p>
+                            <div class="ecosystem-stats">
+                                <small class="text-warning">5+ 游戏上线</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-6">
+                    <div class="card ecosystem-card h-100">
+                        <div class="card-body text-center">
+                            <div class="ecosystem-icon mb-3">
+                                <i class="fas fa-store fa-3x text-warning"></i>
+                            </div>
+                            <h5>NFT市场</h5>
+                            <p class="text-muted">去中心化NFT交易平台，支持创作者发布和交易数字艺术品</p>
+                            <div class="ecosystem-stats">
+                                <small class="text-warning">10K+ NFT交易</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-6">
+                    <div class="card ecosystem-card h-100">
+                        <div class="card-body text-center">
+                            <div class="ecosystem-icon mb-3">
+                                <i class="fas fa-coins fa-3x text-warning"></i>
+                            </div>
+                            <h5>DeFi服务</h5>
+                            <p class="text-muted">流动性挖矿、质押奖励和去中心化借贷服务</p>
+                            <div class="ecosystem-stats">
+                                <small class="text-warning">$50M+ TVL</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-6">
+                    <div class="card ecosystem-card h-100">
+                        <div class="card-body text-center">
+                            <div class="ecosystem-icon mb-3">
+                                <i class="fas fa-users fa-3x text-warning"></i>
+                            </div>
+                            <h5>社交网络</h5>
+                            <p class="text-muted">虚拟社交空间，支持语音聊天、虚拟聚会和社区活动</p>
+                            <div class="ecosystem-stats">
+                                <small class="text-warning">100K+ 活跃用户</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 最新动态 -->
+    <section class="features-section" id="news">
+        <div class="container">
+            <div class="row text-center mb-5">
+                <div class="col-lg-8 mx-auto">
+                    <h2 class="fade-in-up">最新动态</h2>
+                    <p class="text-muted fade-in-up">了解METATOPIA项目的最新进展和重要公告</p>
+                </div>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center mb-3">
+                                <i class="fas fa-calendar-alt text-warning me-2"></i>
+                                <small class="text-muted">2024年1月15日</small>
+                            </div>
+                            <h5 class="card-title">主网正式上线</h5>
+                            <p class="card-text">
+                                METATOPIA主网成功上线，标志着项目进入全新发展阶段。
+                                用户现在可以进行MTP代币的转账和交易。
+                            </p>
+                            <a href="#" class="btn btn-outline-primary btn-sm">
+                                <i class="fas fa-arrow-right me-1"></i>了解更多
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center mb-3">
+                                <i class="fas fa-calendar-alt text-warning me-2"></i>
+                                <small class="text-muted">2024年1月10日</small>
+                            </div>
+                            <h5 class="card-title">战略合作伙伴</h5>
+                            <p class="card-text">
+                                与多家知名区块链公司达成战略合作，共同推进元宇宙生态建设，
+                                为用户提供更丰富的应用场景。
+                            </p>
+                            <a href="#" class="btn btn-outline-primary btn-sm">
+                                <i class="fas fa-arrow-right me-1"></i>了解更多
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center mb-3">
+                                <i class="fas fa-calendar-alt text-warning me-2"></i>
+                                <small class="text-muted">2024年1月5日</small>
+                            </div>
+                            <h5 class="card-title">社区治理启动</h5>
+                            <p class="card-text">
+                                METATOPIA DAO正式启动，持币者可以参与项目治理投票，
+                                共同决定项目的发展方向和重要决策。
+                            </p>
+                            <a href="#" class="btn btn-outline-primary btn-sm">
+                                <i class="fas fa-arrow-right me-1"></i>了解更多
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="footer-content">
+                        <ul class="footer-links">
+                            <li><a href="about.html">关于我们</a></li>
+                            <li><a href="whitepaper.html">白皮书</a></li>
+                            <li><a href="community.html">社区</a></li>
+                            <li><a href="contact.html">联系我们</a></li>
+                        </ul>
+                        
+                        <div class="social-links mb-4">
+                            <a href="https://twitter.com/metatopia_mtp" class="social-btn" target="_blank">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="https://discord.gg/metatopia" class="social-btn" target="_blank">
+                                <i class="fab fa-discord"></i>
+                            </a>
+                            <a href="https://t.me/metatopia_official" class="social-btn" target="_blank">
+                                <i class="fab fa-telegram"></i>
+                            </a>
+                            <a href="https://github.com/metatopia" class="social-btn" target="_blank">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                        
+                        <p>&copy; 2024 METATOPIA Team. All rights reserved.</p>
+                        <p class="small">本网站仅供信息展示，不构成投资建议。加密货币投资存在风险，请谨慎决策。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</section>
+
+    <!-- 浮动操作按钮组 -->
+    <div class="floating-action-buttons">
+        <!-- 返回顶部 -->
+        <button class="fab-btn fab-back-to-top" id="backToTop" title="返回顶部">
+            <i class="fas fa-arrow-up"></i>
+        </button>
+        
+        <!-- 快速联系 -->
+        <button class="fab-btn fab-contact" onclick="window.location.href='contact.html'" title="快速联系">
+            <i class="fas fa-phone"></i>
+        </button>
+        
+        <!-- 分享页面 -->
+        <button class="fab-btn fab-share" id="shareBtn" title="分享页面">
+            <i class="fas fa-share-alt"></i>
+        </button>
+        
+        <!-- 在线客服 -->
+        <button class="fab-btn fab-chat" id="chatBtn" title="在线客服">
+            <i class="fas fa-comments"></i>
+        </button>
+        
+        <!-- 主操作按钮 -->
+        <button class="fab-btn fab-main" id="fabMain" title="快速操作">
+            <i class="fas fa-plus"></i>
+        </button>
+    </div>
+
+    <!-- 分享弹窗 -->
+    <div class="share-modal" id="shareModal">
+        <div class="share-content">
+            <h4>分享METATOPIA</h4>
+            <div class="share-buttons">
+                <button class="share-btn" onclick="shareToWeChat()">
+                    <i class="fab fa-weixin"></i>
+                    微信
+                </button>
+                <button class="share-btn" onclick="shareToWeibo()">
+                    <i class="fab fa-weibo"></i>
+                    微博
+                </button>
+                <button class="share-btn" onclick="shareToQQ()">
+                    <i class="fab fa-qq"></i>
+                    QQ
+                </button>
+                <button class="share-btn" onclick="copyLink()">
+                    <i class="fas fa-link"></i>
+                    复制链接
+                </button>
+            </div>
+            <button class="close-share" onclick="closeShareModal()">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+    </div>
+
+    <!-- Particles.js -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    
+    <!-- Bootstrap JS -->
+    <script src="assets/js/bootstrap.min.js"></script>
+    
+    <!-- Custom JS -->
+    <script src="assets/js/main.js"></script>
+    
+    <!-- 粒子效果初始化 -->
+    <script>
+        particlesJS('particles-js', {
+            particles: {
+                number: {
+                    value: 80,
+                    density: {
+                        enable: true,
+                        value_area: 800
+                    }
+                },
+                color: {
+                    value: ['#667eea', '#764ba2', '#ffc107']
+                },
+                shape: {
+                    type: 'circle',
+                    stroke: {
+                        width: 0,
+                        color: '#000000'
+                    }
+                },
+                opacity: {
+                    value: 0.5,
+                    random: false,
+                    anim: {
+                        enable: false,
+                        speed: 1,
+                        opacity_min: 0.1,
+                        sync: false
+                    }
+                },
+                size: {
+                    value: 3,
+                    random: true,
+                    anim: {
+                        enable: false,
+                        speed: 40,
+                        size_min: 0.1,
+                        sync: false
+                    }
+                },
+                line_linked: {
+                    enable: true,
+                    distance: 150,
+                    color: '#667eea',
+                    opacity: 0.4,
+                    width: 1
+                },
+                move: {
+                    enable: true,
+                    speed: 6,
+                    direction: 'none',
+                    random: false,
+                    straight: false,
+                    out_mode: 'out',
+                    bounce: false,
+                    attract: {
+                        enable: false,
+                        rotateX: 600,
+                        rotateY: 1200
+                    }
+                }
+            },
+            interactivity: {
+                detect_on: 'canvas',
+                events: {
+                    onhover: {
+                        enable: true,
+                        mode: 'repulse'
+                    },
+                    onclick: {
+                        enable: true,
+                        mode: 'push'
+                    },
+                    resize: true
+                },
+                modes: {
+                    grab: {
+                        distance: 400,
+                        line_linked: {
+                            opacity: 1
+                        }
+                    },
+                    bubble: {
+                        distance: 400,
+                        size: 40,
+                        duration: 2,
+                        opacity: 8,
+                        speed: 3
+                    },
+                    repulse: {
+                        distance: 200,
+                        duration: 0.4
+                    },
+                    push: {
+                        particles_nb: 4
+                    },
+                    remove: {
+                        particles_nb: 2
+                    }
+                }
+            },
+            retina_detect: true
+        });
+    </script>
+</body>
+</html>
