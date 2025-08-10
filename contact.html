@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>联系我们 - METATOPIA (MTP)</title>
+    <meta name="description" content="联系METATOPIA团队，获取技术支持和商务合作信息">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+    
+    <!-- Bootstrap CSS -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link href="assets/css/style.css?v=6" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- 粒子背景 -->
+    <div id="particles-js"></div>
+    
+    <!-- 导航栏 -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="fas fa-cube me-2"></i>METATOPIA
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">首页</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://traecwtrg4km-chc2662-6414-mtp1.vercel.app" target="_blank">
+                            <i class="fas fa-gamepad me-1"></i>游戏平台
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">关于我们</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="whitepaper.html">白皮书</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="community.html">社区</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="contact.html">联系我们</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 页面标题 -->
+    <section class="page-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h1 class="page-title">联系我们</h1>
+                    <p class="page-subtitle">我们随时准备为您提供帮助和支持</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 联系方式 -->
+    <section class="contact-info">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="card contact-card h-100">
+                        <div class="card-body text-center">
+                            <div class="contact-icon mb-3">
+                                <i class="fas fa-envelope fa-3x text-primary"></i>
+                            </div>
+                            <h5>邮箱联系</h5>
+                            <p class="text-muted">发送邮件给我们，我们会尽快回复</p>
+                            <div class="contact-details">
+                                <p><strong>商务合作:</strong><br>business@metatopia.io</p>
+                                <p><strong>技术支持:</strong><br>support@metatopia.io</p>
+                                <p><strong>媒体咨询:</strong><br>media@metatopia.io</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="card contact-card h-100">
+                        <div class="card-body text-center">
+                            <div class="contact-icon mb-3">
+                                <i class="fas fa-comments fa-3x text-success"></i>
+                            </div>
+                            <h5>在线客服</h5>
+                            <p class="text-muted">通过在线聊天获得即时帮助</p>
+                            <div class="contact-details">
+                                <p><strong>服务时间:</strong><br>周一至周五 9:00-18:00</p>
+                                <p><strong>响应时间:</strong><br>通常在5分钟内回复</p>
+                                <button class="btn btn-success mt-2" onclick="openChat()">
+                                    <i class="fas fa-comment-dots me-2"></i>开始聊天
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="card contact-card h-100">
+                        <div class="card-body text-center">
+                            <div class="contact-icon mb-3">
+                                <i class="fas fa-users fa-3x text-info"></i>
+                            </div>
+                            <h5>社区支持</h5>
+                            <p class="text-muted">加入我们的社区获得帮助</p>
+                            <div class="contact-details">
+                                <div class="social-buttons">
+                                    <a href="https://discord.gg/metatopia" class="btn btn-outline-primary btn-sm mb-2" target="_blank">
+                                        <i class="fab fa-discord me-1"></i>Discord
+                                    </a>
+                                    <a href="https://t.me/metatopia_official" class="btn btn-outline-info btn-sm mb-2" target="_blank">
+                                        <i class="fab fa-telegram me-1"></i>Telegram
+                                    </a>
+                                    <a href="https://twitter.com/metatopia_mtp" class="btn btn-outline-info btn-sm mb-2" target="_blank">
+                                        <i class="fab fa-twitter me-1"></i>Twitter
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 联系表单 -->
+    <section class="contact-form-section">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="card contact-form-card">
+                        <div class="card-body">
+                            <h3 class="text-center mb-4">发送消息</h3>
+                            <form id="contactForm" class="contact-form">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="mb-3">
+                                            <label for="name" class="form-label">姓名 *</label>
+                                            <input type="text" class="form-control" id="name" name="name" required>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="mb-3">
+                                            <label for="email" class="form-label">邮箱 *</label>
+                                            <input type="email" class="form-control" id="email" name="email" required>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="mb-3">
+                                            <label for="company" class="form-label">公司/组织</label>
+                                            <input type="text" class="form-control" id="company" name="company">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="mb-3">
+                                            <label for="subject" class="form-label">主题 *</label>
+                                            <select class="form-select" id="subject" name="subject" required>
+                                                <option value="">请选择主题</option>
+                                                <option value="business">商务合作</option>
+                                                <option value="technical">技术支持</option>
+                                                <option value="media">媒体咨询</option>
+                                                <option value="partnership">合作伙伴</option>
+                                                <option value="other">其他</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="mb-3">
+                                    <label for="message" class="form-label">消息内容 *</label>
+                                    <textarea class="form-control" id="message" name="message" rows="5" required placeholder="请详细描述您的问题或需求..."></textarea>
+                                </div>
+                                
+                                <div class="mb-3 form-check">
+                                    <input type="checkbox" class="form-check-input" id="privacy" name="privacy" required>
+                                    <label class="form-check-label" for="privacy">
+                                        我同意 <a href="#" class="text-primary">隐私政策</a> 和 <a href="#" class="text-primary">服务条款</a>
+                                    </label>
+                                </div>
+                                
+                                <div class="text-center">
+                                    <button type="submit" class="btn btn-primary btn-lg">
+                                        <i class="fas fa-paper-plane me-2"></i>发送消息
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ部分 -->
+    <section class="faq-section">
+        <div class="container">
+            <div class="row text-center mb-5">
+                <div class="col-lg-8 mx-auto">
+                    <h2 class="fade-in-up">常见问题</h2>
+                    <p class="text-muted fade-in-up">查看常见问题的答案，或许能快速解决您的疑问</p>
+                </div>
+            </div>
+            
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="accordion" id="faqAccordion">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="faq1">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1">
+                                    如何购买MTP代币？
+                                </button>
+                            </h2>
+                            <div id="collapse1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    您可以通过我们的官方网站或支持的加密货币交易所购买MTP代币。
+                                    请确保使用官方渠道，避免诈骗风险。详细购买指南请查看我们的白皮书。
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="faq2">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2">
+                                    MTP代币有什么用途？
+                                </button>
+                            </h2>
+                            <div id="collapse2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    MTP代币是METATOPIA生态系统的核心，可用于治理投票、NFT交易、
+                                    游戏内购买、质押奖励等多种场景。持有MTP代币的用户可以参与项目治理。
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="faq3">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3">
+                                    如何参与METATOPIA生态？
+                                </button>
+                            </h2>
+                            <div id="collapse3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    您可以通过多种方式参与：购买和持有MTP代币、参与治理投票、
+                                    使用我们的游戏平台、在NFT市场交易、参与社区活动等。
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="faq4">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4">
+                                    项目的安全性如何保障？
+                                </button>
+                            </h2>
+                            <div id="collapse4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    我们采用多重安全措施：智能合约经过专业审计、多重签名机制、
+                                    去中心化验证、定期安全检查等，确保用户资产和数据安全。
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="faq5">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5">
+                                    如何获得技术支持？
+                                </button>
+                            </h2>
+                            <div id="collapse5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    您可以通过多种渠道获得支持：发送邮件至support@metatopia.io、
+                                    加入我们的Discord或Telegram社区、使用网站在线客服功能。
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="footer-content">
+                        <ul class="footer-links">
+                            <li><a href="about.html">关于我们</a></li>
+                            <li><a href="whitepaper.html">白皮书</a></li>
+                            <li><a href="community.html">社区</a></li>
+                            <li><a href="contact.html">联系我们</a></li>
+                        </ul>
+                        
+                        <div class="social-links mb-4">
+                            <a href="https://twitter.com/metatopia_mtp" class="social-btn" target="_blank">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="https://discord.gg/metatopia" class="social-btn" target="_blank">
+                                <i class="fab fa-discord"></i>
+                            </a>
+                            <a href="https://t.me/metatopia_official" class="social-btn" target="_blank">
+                                <i class="fab fa-telegram"></i>
+                            </a>
+                            <a href="https://github.com/metatopia" class="social-btn" target="_blank">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                        
+                        <p>&copy; 2024 METATOPIA Team. All rights reserved.</p>
+                        <p class="small">本网站仅供信息展示，不构成投资建议。加密货币投资存在风险，请谨慎决策。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Particles.js -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    
+    <!-- Bootstrap JS -->
+    <script src="assets/js/bootstrap.min.js"></script>
+    
+    <!-- Custom JS -->
+    <script src="assets/js/main.js"></script>
+    
+    <!-- 粒子效果初始化 -->
+    <script>
+        particlesJS('particles-js', {
+            particles: {
+                number: {
+                    value: 30,
+                    density: {
+                        enable: true,
+                        value_area: 800
+                    }
+                },
+                color: {
+                    value: ['#667eea', '#764ba2']
+                },
+                shape: {
+                    type: 'circle'
+                },
+                opacity: {
+                    value: 0.2
+                },
+                size: {
+                    value: 2,
+                    random: true
+                },
+                line_linked: {
+                    enable: true,
+                    distance: 100,
+                    color: '#667eea',
+                    opacity: 0.1,
+                    width: 1
+                },
+                move: {
+                    enable: true,
+                    speed: 2
+                }
+            },
+            interactivity: {
+                detect_on: 'canvas',
+                events: {
+                    onhover: {
+                        enable: true,
+                        mode: 'bubble'
+                    }
+                }
+            },
+            retina_detect: true
+        });
+        
+        // 在线客服功能
+        function openChat() {
+            alert('在线客服功能即将上线，请暂时通过邮箱或社区联系我们！');
+        }
+    </script>
+</body>
+</html>
