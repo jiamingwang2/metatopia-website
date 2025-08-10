@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>白皮书 - METATOPIA (MTP)</title>
+    <meta name="description" content="METATOPIA技术白皮书，详细介绍项目技术架构和实现方案">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+    
+    <!-- Bootstrap CSS -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link href="assets/css/style.css?v=6" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- 粒子背景 -->
+    <div id="particles-js"></div>
+    
+    <!-- 导航栏 -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="fas fa-cube me-2"></i>METATOPIA
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">首页</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://traecwtrg4km-chc2662-6414-mtp1.vercel.app" target="_blank">
+                            <i class="fas fa-gamepad me-1"></i>游戏平台
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">关于我们</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="whitepaper.html">白皮书</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="community.html">社区</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">联系我们</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 页面标题 -->
+    <section class="page-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h1 class="page-title">技术白皮书</h1>
+                    <p class="page-subtitle">深入了解METATOPIA的技术架构和创新方案</p>
+                    <div class="download-buttons mt-4">
+                        <a href="https://mtp688-1373469697.cos.ap-guangzhou.myqcloud.com/MetaTopia%20%28MTP%29%E7%99%BD%E7%9A%AE%E4%B9%A6%20%281%29.docx" class="btn btn-primary btn-lg me-3" download>
+                            <i class="fas fa-download me-2"></i>下载中文版
+                        </a>
+                        <a href="https://mtp688-1373469697.cos.ap-guangzhou.myqcloud.com/MetaTopia%20%28MTP%29%E7%99%BD%E7%9A%AE%E4%B9%A6.pdf" class="btn btn-outline-light btn-lg" download>
+                            <i class="fas fa-download me-2"></i>下载幻灯片（PDF）
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 白皮书内容 -->
+    <section class="whitepaper-content">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <!-- 目录导航 -->
+                    <div class="toc-sidebar sticky-top">
+                        <h5>目录</h5>
+                        <ul class="toc-list">
+                            <li><a href="#abstract">摘要</a></li>
+                            <li><a href="#introduction">项目介绍</a></li>
+                            <li><a href="#technology">技术架构</a></li>
+                            <li><a href="#tokenomics">代币经济</a></li>
+                            <li><a href="#ecosystem">生态系统</a></li>
+                            <li><a href="#roadmap">发展路线</a></li>
+                            <li><a href="#team">团队介绍</a></li>
+                            <li><a href="#risks">风险提示</a></li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="col-lg-9">
+                    <div class="whitepaper-sections">
+                        <!-- 摘要 -->
+                        <section id="abstract" class="whitepaper-section">
+                            <h2>摘要</h2>
+                            <p>
+                                METATOPIA (MTP) 是一个基于区块链技术的去中心化元宇宙生态系统，旨在为用户提供
+                                安全、高效、创新的数字资产管理和交易服务。通过整合NFT市场、游戏平台、DeFi服务
+                                和社交网络，METATOPIA构建了一个完整的元宇宙经济体系。
+                            </p>
+                            <p>
+                                本项目采用先进的区块链技术架构，包括智能合约、跨链协议和分布式存储，
+                                确保系统的安全性、可扩展性和去中心化特性。MTP代币作为生态系统的核心，
+                                支持治理投票、价值交换和激励机制。
+                            </p>
+                        </section>
+
+                        <!-- 项目介绍 -->
+                        <section id="introduction" class="whitepaper-section">
+                            <h2>项目介绍</h2>
+                            <h4>背景与愿景</h4>
+                            <p>
+                                随着区块链技术的快速发展和元宇宙概念的兴起，数字世界正在成为人类生活的重要组成部分。
+                                METATOPIA应运而生，致力于构建一个开放、包容、创新的元宇宙生态系统。
+                            </p>
+                            
+                            <h4>核心特性</h4>
+                            <ul>
+                                <li><strong>去中心化治理：</strong>通过DAO机制实现社区自治</li>
+                                <li><strong>跨链兼容：</strong>支持多条主流区块链网络</li>
+                                <li><strong>NFT生态：</strong>完整的数字资产创作和交易平台</li>
+                                <li><strong>游戏集成：</strong>多款原创元宇宙游戏</li>
+                                <li><strong>DeFi服务：</strong>流动性挖矿和质押奖励</li>
+                            </ul>
+                        </section>
+
+                        <!-- 技术架构 -->
+                        <section id="technology" class="whitepaper-section">
+                            <h2>技术架构</h2>
+                            <h4>区块链基础设施</h4>
+                            <p>
+                                METATOPIA采用多层架构设计，包括共识层、网络层、数据层和应用层。
+                                主要技术特点包括：
+                            </p>
+                            
+                            <div class="tech-features">
+                                <div class="row g-4">
+                                    <div class="col-md-6">
+                                        <div class="tech-card">
+                                            <h5><i class="fas fa-shield-alt text-primary me-2"></i>安全机制</h5>
+                                            <p>多重签名、智能合约审计、去中心化验证</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="tech-card">
+                                            <h5><i class="fas fa-tachometer-alt text-primary me-2"></i>性能优化</h5>
+                                            <p>分片技术、状态通道、Layer 2扩容方案</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="tech-card">
+                                            <h5><i class="fas fa-link text-primary me-2"></i>跨链协议</h5>
+                                            <p>支持以太坊、BSC、Polygon等主流网络</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="tech-card">
+                                            <h5><i class="fas fa-database text-primary me-2"></i>数据存储</h5>
+                                            <p>IPFS分布式存储、链上链下数据同步</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                        <!-- 代币经济 -->
+                        <section id="tokenomics" class="whitepaper-section">
+                            <h2>代币经济模型</h2>
+                            <h4>MTP代币分配</h4>
+                            <div class="tokenomics-chart">
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <div class="allocation-item">
+                                            <div class="allocation-bar">
+                                                <div class="bar-fill" style="width: 40%;"></div>
+                                            </div>
+                                            <div class="allocation-info">
+                                                <span class="allocation-label">生态发展</span>
+                                                <span class="allocation-percent">40%</span>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="allocation-item">
+                                            <div class="allocation-bar">
+                                                <div class="bar-fill" style="width: 25%;"></div>
+                                            </div>
+                                            <div class="allocation-info">
+                                                <span class="allocation-label">团队与顾问</span>
+                                                <span class="allocation-percent">25%</span>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="allocation-item">
+                                            <div class="allocation-bar">
+                                                <div class="bar-fill" style="width: 20%;"></div>
+                                            </div>
+                                            <div class="allocation-info">
+                                                <span class="allocation-label">公开销售</span>
+                                                <span class="allocation-percent">20%</span>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="allocation-item">
+                                            <div class="allocation-bar">
+                                                <div class="bar-fill" style="width: 15%;"></div>
+                                            </div>
+                                            <div class="allocation-info">
+                                                <span class="allocation-label">社区奖励</span>
+                                                <span class="allocation-percent">15%</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="col-lg-6">
+                                        <h5>代币用途</h5>
+                                        <ul>
+                                            <li>生态系统内的价值交换媒介</li>
+                                            <li>治理投票权和决策参与</li>
+                                            <li>质押奖励和流动性挖矿</li>
+                                            <li>NFT交易和游戏内购买</li>
+                                            <li>平台手续费支付</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                        <!-- 生态系统 -->
+                        <section id="ecosystem" class="whitepaper-section">
+                            <h2>生态系统</h2>
+                            <div class="ecosystem-overview">
+                                <div class="row g-4">
+                                    <div class="col-lg-6">
+                                        <div class="ecosystem-module">
+                                            <h4><i class="fas fa-gamepad text-warning me-2"></i>游戏平台</h4>
+                                            <p>
+                                                多款原创元宇宙游戏，支持NFT道具、角色交易，
+                                                玩家可以在游戏中赚取MTP代币。
+                                            </p>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="col-lg-6">
+                                        <div class="ecosystem-module">
+                                            <h4><i class="fas fa-store text-warning me-2"></i>NFT市场</h4>
+                                            <p>
+                                                去中心化NFT交易平台，支持艺术品、收藏品、
+                                                游戏道具等数字资产的创作和交易。
+                                            </p>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="col-lg-6">
+                                        <div class="ecosystem-module">
+                                            <h4><i class="fas fa-coins text-warning me-2"></i>DeFi服务</h4>
+                                            <p>
+                                                提供流动性挖矿、质押奖励、借贷服务等
+                                                去中心化金融产品。
+                                            </p>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="col-lg-6">
+                                        <div class="ecosystem-module">
+                                            <h4><i class="fas fa-users text-warning me-2"></i>社交网络</h4>
+                                            <p>
+                                                虚拟社交空间，支持语音聊天、虚拟聚会、
+                                                社区活动等社交功能。
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                        <!-- 发展路线 -->
+                        <section id="roadmap" class="whitepaper-section">
+                            <h2>发展路线图</h2>
+                            <div class="roadmap-timeline">
+                                <div class="timeline-item completed">
+                                    <div class="timeline-content">
+                                        <h5>2024 Q1 - 项目启动</h5>
+                                        <ul>
+                                            <li>团队组建完成</li>
+                                            <li>技术架构设计</li>
+                                            <li>白皮书发布</li>
+                                            <li>社区建设启动</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                
+                                <div class="timeline-item completed">
+                                    <div class="timeline-content">
+                                        <h5>2024 Q2 - 测试网上线</h5>
+                                        <ul>
+                                            <li>智能合约开发</li>
+                                            <li>测试网部署</li>
+                                            <li>安全审计</li>
+                                            <li>Beta版本发布</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                
+                                <div class="timeline-item active">
+                                    <div class="timeline-content">
+                                        <h5>2024 Q3 - 主网发布</h5>
+                                        <ul>
+                                            <li>主网正式上线</li>
+                                            <li>代币分发</li>
+                                            <li>交易所上市</li>
+                                            <li>治理系统启动</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                
+                                <div class="timeline-item">
+                                    <div class="timeline-content">
+                                        <h5>2024 Q4 - 生态扩展</h5>
+                                        <ul>
+                                            <li>NFT市场上线</li>
+                                            <li>游戏平台发布</li>
+                                            <li>DeFi服务集成</li>
+                                            <li>合作伙伴接入</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                        <!-- 团队介绍 -->
+                        <section id="team" class="whitepaper-section">
+                            <h2>团队介绍</h2>
+                            <p>
+                                METATOPIA团队由来自区块链、游戏开发、金融科技等领域的资深专家组成，
+                                拥有丰富的项目经验和深厚的技术积累。
+                            </p>
+                            
+                            <div class="team-stats">
+                                <div class="row text-center">
+                                    <div class="col-md-3">
+                                        <div class="stat-item">
+                                            <h3>15+</h3>
+                                            <p>核心团队成员</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="stat-item">
+                                            <h3>50+</h3>
+                                            <p>项目经验（年）</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="stat-item">
+                                            <h3>10+</h3>
+                                            <p>成功项目</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="stat-item">
+                                            <h3>5+</h3>
+                                            <p>技术专利</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                        <!-- 风险提示 -->
+                        <section id="risks" class="whitepaper-section">
+                            <h2>风险提示</h2>
+                            <div class="risk-warning">
+                                <div class="alert alert-warning">
+                                    <h5><i class="fas fa-exclamation-triangle me-2"></i>重要提示</h5>
+                                    <p>
+                                        加密货币投资存在高风险，价格波动较大。投资者应充分了解项目风险，
+                                        根据自身风险承受能力谨慎投资。本白皮书仅供信息参考，不构成投资建议。
+                                    </p>
+                                </div>
+                                
+                                <h4>主要风险因素</h4>
+                                <ul>
+                                    <li><strong>技术风险：</strong>智能合约漏洞、网络攻击等技术安全风险</li>
+                                    <li><strong>市场风险：</strong>加密货币市场波动、流动性风险</li>
+                                    <li><strong>监管风险：</strong>各国监管政策变化可能影响项目发展</li>
+                                    <li><strong>竞争风险：</strong>同类项目竞争激烈，市场份额不确定</li>
+                                    <li><strong>执行风险：</strong>项目开发进度、团队执行能力等因素</li>
+                                </ul>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="footer-content">
+                        <ul class="footer-links">
+                            <li><a href="about.html">关于我们</a></li>
+                            <li><a href="whitepaper.html">白皮书</a></li>
+                            <li><a href="community.html">社区</a></li>
+                            <li><a href="contact.html">联系我们</a></li>
+                        </ul>
+                        
+                        <div class="social-links mb-4">
+                            <a href="https://twitter.com/metatopia_mtp" class="social-btn" target="_blank">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="https://discord.gg/metatopia" class="social-btn" target="_blank">
+                                <i class="fab fa-discord"></i>
+                            </a>
+                            <a href="https://t.me/metatopia_official" class="social-btn" target="_blank">
+                                <i class="fab fa-telegram"></i>
+                            </a>
+                            <a href="https://github.com/metatopia" class="social-btn" target="_blank">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                        
+                        <p>&copy; 2024 METATOPIA Team. All rights reserved.</p>
+                        <p class="small">本网站仅供信息展示，不构成投资建议。加密货币投资存在风险，请谨慎决策。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Particles.js -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    
+    <!-- Bootstrap JS -->
+    <script src="assets/js/bootstrap.min.js"></script>
+    
+    <!-- Custom JS -->
+    <script src="assets/js/main.js"></script>
+    
+    <!-- 粒子效果初始化 -->
+    <script>
+        particlesJS('particles-js', {
+            particles: {
+                number: {
+                    value: 40,
+                    density: {
+                        enable: true,
+                        value_area: 800
+                    }
+                },
+                color: {
+                    value: ['#667eea', '#764ba2']
+                },
+                shape: {
+                    type: 'circle'
+                },
+                opacity: {
+                    value: 0.2
+                },
+                size: {
+                    value: 2,
+                    random: true
+                },
+                line_linked: {
+                    enable: true,
+                    distance: 120,
+                    color: '#667eea',
+                    opacity: 0.1,
+                    width: 1
+                },
+                move: {
+                    enable: true,
+                    speed: 3
+                }
+            },
+            interactivity: {
+                detect_on: 'canvas',
+                events: {
+                    onhover: {
+                        enable: true,
+                        mode: 'repulse'
+                    }
+                }
+            },
+            retina_detect: true
+        });
+    </script>
+</body>
+</html>
